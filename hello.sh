@@ -1,3 +1,3 @@
-var="Hello Aleezhan!"
+var="Hello aleezhan!"
 echo "$var"
 
