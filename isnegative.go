@@ -4,9 +4,10 @@ import "github.com/01-edu/z01"
 
 func IsNegative(nb int) {
 	if nb >= 0 {
-		return "F"
+		result = 'F'
 	} else {
-		return "T"
+		result = 'T'
 	}
+	return result
 
 }
