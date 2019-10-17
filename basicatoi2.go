@@ -7,7 +7,7 @@ func BasicAtoi2(s string) int {
 	for _, num := range s {
 		var numb int = 0
 		if num > '9' || num < '0' {
-			a == 0
+			a = 0
 			break
 		}
 
