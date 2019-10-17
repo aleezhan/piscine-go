@@ -20,11 +20,9 @@ func BasicAtoi(s string) int {
 
 	for _, word := range stringJ {
 
-		numss = string("%v%v", numss, word)
+		numss = word
 
 	}
-
-	numss = int(numss)
 
 	return numss
 
