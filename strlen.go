@@ -8,6 +8,8 @@ func StrLen(str string) int {
 
 	for _, word := range stringT {
 
+		word = word
+
 		i++
 
 	}
