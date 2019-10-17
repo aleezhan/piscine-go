@@ -7,6 +7,7 @@ func PrintNbr(n int) {
 	var j = 0
 	var num [20]int
 	for i := n; i >= 0; i / 10 {
+		i = i
 		k = i
 		k = i % 10
 		j = 0
