@@ -19,9 +19,9 @@ func StrRev(s string) string {
 
 	for j := i; j > 1; j-- {
 		for k := 0; k < j-1; k++ {
-			c = str[k]
-			str[k] = str[k+1]
-			str[k+1] = c
+			c = stringT[k]
+			stringT[k] = stringT[k+1]
+			stringT[k+1] = c
 
 		}
 	}
@@ -32,7 +32,7 @@ func StrRev(s string) string {
 
 		word = word
 
-		s = s + word
+		s = s + string(word)
 
 	}
 
