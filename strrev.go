@@ -2,8 +2,6 @@ package piscine
 
 func StrRev(s string) string {
 
-	stringM := []rune(s)
-
 	i := 0
 	var c rune
 
