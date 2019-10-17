@@ -7,7 +7,7 @@ func BasicAtoi(s string) int {
 	for _, num := range s {
 
 		var numb int = 0
-		for i := '1'; i <= a; i++ {
+		for i := '1'; i <= num; i++ {
 			numb++
 		}
 		a = a*10 + numb
