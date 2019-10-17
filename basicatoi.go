@@ -4,8 +4,7 @@ func BasicAtoi(s string) int {
 
 	stringM := []rune(s)
 	stringJ := []rune()
-	var nums string
-	var numss int
+	var numss string
 	var i int = 0
 
 	for _, word := range stringM {
@@ -21,13 +20,11 @@ func BasicAtoi(s string) int {
 
 	for _, word := range stringJ {
 
-		word = word
-
-		nums = nums + string(word)
+		numss = string("%v%v", numss, word)
 
 	}
 
-	numss = int(nums)
+	numss = int(numss)
 
 	return numss
 
