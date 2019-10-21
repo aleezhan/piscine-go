@@ -6,6 +6,16 @@ func FindNextPrime(nb int) int {
 		nb = 0
 	}
 	for i := nb; i < nb+1000; i++ {
+		d := 0
+		for j := 0; j < i; j++ {
+			if i%j == 0 {
+				d++
+				break
+			}
+		}
+		if d > 0 {
+			continue
+		}
 		if i == 0 {
 			continue
 		}
