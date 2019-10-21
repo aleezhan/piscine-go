@@ -1,8 +1,6 @@
 package piscine
 
-import (
-	"fmt"
-)
+import "github.com/01-edu/z01"
 
 func IterativeFactorial(nb int) int {
 
@@ -15,7 +13,7 @@ func IterativeFactorial(nb int) int {
 
 		}
 
-		print(f)
+		z01.PrintRune(char(f))
 
 	} else {
 		return 0
