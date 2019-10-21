@@ -8,10 +8,10 @@ func FindNextPrime(nb int) int {
 			break
 		}
 		if i == 1 {
-			a = i
+			a = i + 1
 			break
 		}
-		if i%2 != 0 && i%3 != 0 && i%5 != 0 {
+		if i%2 != 0 && i%3 != 0 && i%5 != 0 && i%7 != 0 && i > 0 {
 			a = i
 			break
 		}
