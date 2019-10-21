@@ -13,11 +13,11 @@ func FindNextPrime(nb int) int {
 			a = i + 1
 			break
 		}
-		if i == 2 || i == 3 || i == 5 || i == 7 {
+		if i == 2 || i == 3 || i == 5 || i == 7 || i == 11 {
 			a = i
 			break
 		}
-		if i%2 != 0 && i%3 != 0 && i%5 != 0 && i%7 != 0 && i > 0 {
+		if i%2 != 0 && i%3 != 0 && i%5 != 0 && i%7 != 0 && i%11 != 0 {
 			a = i
 			break
 		}
