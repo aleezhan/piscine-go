@@ -3,7 +3,10 @@ package piscine
 func FindNextPrime(nb int) int {
 	a := 0
 	for i := nb; i < nb+1000; i++ {
-		if i == 2 || i == 3 || i == 5 {
+		if i == 0 {
+			continue
+		}
+		if i == 2 || i == 3 || i == 5 || i == 7 {
 			a = i
 			break
 		}
