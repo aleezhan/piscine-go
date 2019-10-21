@@ -15,7 +15,7 @@ func IterativeFactorial(nb int) int {
 
 		}
 
-		fmt.print(f)
+		print(f)
 
 	} else {
 		return 0
