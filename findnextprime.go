@@ -7,6 +7,9 @@ func FindNextPrime(nb int) int {
 	}
 	for i := nb; i < nb+1000; i++ {
 		d := 0
+		if i == 0 {
+			continue
+		}
 		for j := 0; j < i; j++ {
 			if i%j == 0 {
 				d++
@@ -14,9 +17,6 @@ func FindNextPrime(nb int) int {
 			}
 		}
 		if d > 0 {
-			continue
-		}
-		if i == 0 {
 			continue
 		}
 		if i == 1 {
