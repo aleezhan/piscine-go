@@ -12,15 +12,11 @@ func Raid1a(x, y int) {
 				z01.PrintRune('o')
 			} else if (i == 0 || i == (y - 1)) && (j != 0 || (j != (x - 1))) {
 				z01.PrintRune('-')
-			} else if (i != 0 || i != (y - 1)) && (j == 0 || (j == x - 1)) {
+			} else if (i == 0 || i == (y - 1)) && (j == 0 || (j == (x - 1))) {
 				z01.PrintRune('|')
-			} else if (i != 0 || i != (y - 1)) && (j != 0 || (j != x - 1)) {
-				z01.PrintRune(' ')
 			}
 
 		}
-	z01.PrintRune(10)
-
 
 	}
 
