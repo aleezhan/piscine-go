@@ -17,7 +17,7 @@ func FindNextPrime(nb int) int {
 		}
 	}
 	if a == 0 {
-		return
+		return a
 	}
 	return a
 }
