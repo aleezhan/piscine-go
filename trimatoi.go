@@ -9,7 +9,7 @@ func TrimAtoi(s string) int {
 		}
 		if num >= 48 && num <= 57 {
 			k *= 10
-			k += int(num + 48)
+			k += int(num - 48)
 			if c != 1 {
 				c += 2
 			}
