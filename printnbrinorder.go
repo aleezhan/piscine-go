@@ -8,7 +8,7 @@ func PrintNbrInOrder(n int) {
 
 	if n > 0 {
 		for {
-			a /= 10
+			a = n / 10
 			b++
 			if a <= 0 {
 				break
