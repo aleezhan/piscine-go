@@ -1,25 +1,27 @@
 package piscine
 
 func Capitalize(s string) string {
-	arr := []rune(s)
-	l := 0
-	l = l
-	if arr[0] >= 97 && arr[0] <= 122 {
-		l = 0
-	} else {
-		l = 1
-	}
+	my_arr := []rune(s)
 	for index, letter := range s {
-		if letter >= 97 && letter <= 122 && l == 0 {
-			arr[index] = letter - 32
-			l++
-		} else if letter >= 65 && letter <= 90 && l == 1 {
-			arr[index] = letter + 32
+		if (my_arr[index-1] < 'A' || my_arr[index-1] > 'Z') &&
+			(my_arr[index] >= 'a' && my_arr[index] <= 'z') &&
+			(my_arr[index-1] < 'a' || my_arr[index-1] > 'z') &&
+			(my_arr[index-1] < '0' || my_arr[index-1] > '9') {
+			my_arr[index] = rune(my_arr[index] - 32)
 		}
-		if letter < 97 || letter > 122 && l == 1 {
-			l--
+		if (my_arr[index-1] >= 'A' && my_arr[index-1] <= 'Z') &&
+			(my_arr[index] >= 'A' && my_arr[index] <= 'Z') {
+			my_arr[index] = rune(my_arr[index] + 32)
+		}
+		if (my_arr[index-1] >= 'a' && my_arr[index-1] <= 'z') &&
+			(my_arr[index] >= 'A' && my_arr[index] <= 'Z') {
+			my_arr[index] = rune(my_arr[index] + 32)
+		}
+		if (my_arr[index-1] >= '0' && my_arr[index-1] <= '9') &&
+			(my_arr[index] >= 'A' && my_arr[index] <= 'Z') {
+			my_arr[index] = rune(my_arr[index] + 32)
 		}
 
 	}
-	return string(arr)
+	return string(my_arr)
 }
