@@ -7,5 +7,5 @@ func ToUpper(s string) string {
 			arr[index] = letter - 32
 		}
 	}
-	return arr
+	return string(arr)
 }
