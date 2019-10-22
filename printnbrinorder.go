@@ -4,7 +4,7 @@ import "github.com/01-edu/z01"
 
 func PrintNbrInOrder(n int) {
 	a := 0
-	var int b
+	b := 0
 	if n > 0 {
 		for {
 			a /= 10
@@ -18,7 +18,7 @@ func PrintNbrInOrder(n int) {
 		c := n
 		for j := 0; j < b; j++ {
 			if c%10 == i {
-				d = c % 10
+				d := c % 10
 				z01.PrintRune(rune(d))
 				c /= 10
 			}
