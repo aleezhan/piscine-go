@@ -20,8 +20,9 @@ func PrintNbrInOrder(n int) {
 			if c%10 == i {
 				z01.PrintRune(rune((c % 10) + 48))
 				c /= 10
+			} else {
+				c /= 10
 			}
 		}
-		z01.PrintRune(rune((c % 10) + 48))
 	}
 }
