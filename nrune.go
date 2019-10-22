@@ -7,5 +7,5 @@ func NRune(s string, n int) rune {
 			break
 		}
 	}
-	return letter
+	return l
 }
