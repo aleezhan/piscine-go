@@ -3,6 +3,7 @@ package piscine
 func Capitalize(s string) string {
 	my_arr := []rune(s)
 	for index, letter := range s {
+		letter = letter
 		if (my_arr[index-1] < 'A' || my_arr[index-1] > 'Z') &&
 			(my_arr[index] >= 'a' && my_arr[index] <= 'z') &&
 			(my_arr[index-1] < 'a' || my_arr[index-1] > 'z') &&
