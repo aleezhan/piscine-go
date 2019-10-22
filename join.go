@@ -6,7 +6,7 @@ func Join(strs []string, sep string) string {
 		k := in
 	}
 	for index, word := range strs {
-		if index == in {
+		if index == k {
 			words += word
 			continue
 		}
