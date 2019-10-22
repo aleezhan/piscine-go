@@ -13,7 +13,7 @@ func Index(s string, toFind string) int {
 		lett = lett
 		k++
 	}
-	if k == "" {
+	if k == 0 {
 		return 0
 	}
 	if index == 0 {
