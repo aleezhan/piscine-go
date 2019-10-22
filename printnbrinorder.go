@@ -15,8 +15,9 @@ func PrintNbrInOrder(n int) {
 			}
 		}
 	} else {
-		z01.PrintRune(rune(0 + 40))
+		z01.PrintRune(rune(0 + 48))
 	}
+	z01.PrintRune(rune(b + 48))
 
 	for i := 0; i < 10; i++ {
 		c := n
