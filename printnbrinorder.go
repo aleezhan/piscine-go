@@ -16,11 +16,9 @@ func PrintNbrInOrder(n int) {
 	}
 	for i := 1; i < 10; i++ {
 		c := n
-		d := c
 		for j := 0; j < b; j++ {
-			if d%10 == i {
-				d = c % 10
-				z01.PrintRune(rune(d + 48))
+			if c%10 == i {
+				z01.PrintRune(rune((c % 10) + 48))
 				c /= 10
 			}
 		}
