@@ -6,4 +6,5 @@ func ToUpper(s string) string {
 			letter -= 32
 		}
 	}
+	return s
 }
