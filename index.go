@@ -14,7 +14,7 @@ func Index(s string, toFind string) int {
 		k++
 	}
 	a := 1
-	if index >= k {
+	if index > k {
 		for i := 0; i < index; i++ {
 			if arr[i] == arr2[0] {
 				a = 1
