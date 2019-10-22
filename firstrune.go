@@ -1,5 +1,9 @@
 package piscine
 
+import (
+	"fmt"
+)
+
 func FirstRune(s string) rune {
-	z01.PrintRune(s[0])
+	fmt.print(s[0])
 }
