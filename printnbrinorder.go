@@ -8,16 +8,15 @@ func PrintNbrInOrder(n int) {
 
 	if n > 0 {
 		for {
-			a = n / 10
-			b++
 			if a <= 0 {
 				break
 			}
+			a = n / 10
+			b++
 		}
 	} else {
 		z01.PrintRune(rune(0 + 48))
 	}
-	z01.PrintRune(rune(b + 48))
 
 	for i := 0; i < 10; i++ {
 		c := n
