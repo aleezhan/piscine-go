@@ -2,9 +2,11 @@ package piscine
 
 func Join(strs []string, sep string) string {
 	var words string
-	k := len(strs)
+	for in, word := range strs {
+		k := in
+	}
 	for index, word := range strs {
-		if index == strs-1 {
+		if index == in {
 			words += word
 			continue
 		}
