@@ -5,13 +5,13 @@ import "github.com/01-edu/z01"
 func PrintNbrInOrder(n int) {
 	a := 0
 	b := 0
-
+	a = n
 	if n > 0 {
 		for {
 			if a <= 0 {
 				break
 			}
-			a = n / 10
+			a = a / 10
 			b++
 		}
 	} else {
