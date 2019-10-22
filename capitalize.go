@@ -2,6 +2,10 @@ package piscine
 
 func Capitalize(s string) string {
 	arr := []rune(s)
+	k := 0
+	for _, let := range s {
+		k++
+	}
 	l := 0
 	l = l
 	if arr[0] >= 97 && arr[0] <= 122 {
@@ -14,8 +18,10 @@ func Capitalize(s string) string {
 			arr[index] = letter - 32
 			l++
 		}
-		if (letter < 97 || letter > 122) && (arr[index+1] >= 97 && arr[index+1] <= 122) {
-			l--
+		if k-2 != index {
+			if (letter < 97 || letter > 122) && (arr[index+1] >= 97 && arr[index+1] <= 122) {
+				l--
+			}
 		}
 
 	}
