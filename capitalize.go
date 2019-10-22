@@ -2,6 +2,7 @@ package piscine
 
 func Capitalize(s string) string {
 	arr := []rune(s)
+	l := 0
 	if arr[0] >= 97 && arr[0] <= 122 {
 		l := 0
 	} else {
