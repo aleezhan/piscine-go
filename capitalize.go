@@ -4,6 +4,7 @@ func Capitalize(s string) string {
 	arr := []rune(s)
 	k := 0
 	for _, let := range s {
+		let = let
 		k++
 	}
 	l := 0
