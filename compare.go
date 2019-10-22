@@ -7,7 +7,7 @@ func Compare(a, b string) int {
 	ar := []rune(a)
 	arr := []rune(b)
 	indexx := 0
-	b := 0
+	c := 0
 	for _, lett := range b {
 		lett = lett
 		indexx++
@@ -16,10 +16,10 @@ func Compare(a, b string) int {
 		if ar[0] == arr[0] {
 			continue
 		}
-		b++
+		c++
 		break
 	}
-	if b == 0 {
+	if c == 0 {
 		return 1
 	}
 	return -1
