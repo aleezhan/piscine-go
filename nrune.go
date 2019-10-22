@@ -1,9 +1,10 @@
 package piscine
 
 func NRune(s string, n int) rune {
+	l := 'a'
 	for index, letter := range s {
 		if index+1 == n {
-			l := letter
+			l = letter
 			break
 		}
 	}
