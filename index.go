@@ -14,18 +14,20 @@ func Index(s string, toFind string) int {
 		k++
 	}
 	a := 1
-	for i := 0; i < index; i++ {
-		if arr[i] == arr2[0] {
-			a = 1
-			for j := 0; j < k; j++ {
-				if arr2[j] == arr[i+j] {
-					continue
+	if index >= k {
+		for i := 0; i < index; i++ {
+			if arr[i] == arr2[0] {
+				a = 1
+				for j := 0; j < k; j++ {
+					if arr2[j] == arr[i+j] {
+						continue
+					}
+					a = 0
+					break
 				}
-				a = 0
-				break
-			}
-			if a == 1 {
-				return i
+				if a == 1 {
+					return i
+				}
 			}
 		}
 	}
