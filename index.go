@@ -13,8 +13,11 @@ func Index(s string, toFind string) int {
 		lett = lett
 		k++
 	}
+	if index == 0 || k == 0 {
+		return -1
+	}
 	a := 1
-	if index > k {
+	if index >= k {
 		for i := 0; i < index; i++ {
 			if arr[i] == arr2[0] {
 				a = 1
