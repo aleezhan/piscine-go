@@ -14,7 +14,7 @@ func Capitalize(s string) string {
 			arr[index] = letter - 32
 			l++
 		}
-		if letter < 97 || letter > 122 {
+		if letter < 97 || letter > 122 && l == 1 {
 			l--
 		}
 
