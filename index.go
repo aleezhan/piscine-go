@@ -13,13 +13,14 @@ func Index(s string, toFind string) int {
 		lett = lett
 		k++
 	}
+	a := 1
 	for i := 0; i < index; i++ {
 		if arr[i] == arr2[0] {
 			for j := 0; j < k; k++ {
 				if arr2[j] == arr[i+j] {
 					continue
 				}
-				a := 1
+				a = 0
 				break
 			}
 			if a == 1 {
