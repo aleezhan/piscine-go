@@ -1,11 +1,10 @@
-package piscine
+package piscine 
 
 func IsPrintable(str string) bool {
 	for _, letter := range str {
-		if letter != '\\' {
-			continue
+		if letter >= 0 && letter <= 32 {
+			return false
 		}
-		return false
 	}
 	return true
 }
