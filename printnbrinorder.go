@@ -5,6 +5,7 @@ import "github.com/01-edu/z01"
 func PrintNbrInOrder(n int) {
 	a := 0
 	b := 0
+
 	if n > 0 {
 		for {
 			a /= 10
@@ -13,7 +14,10 @@ func PrintNbrInOrder(n int) {
 				break
 			}
 		}
+	} else {
+		z01.PrintRune(rune(0 + 40))
 	}
+
 	for i := 0; i < 10; i++ {
 		c := n
 		for j := 0; j < b; j++ {
