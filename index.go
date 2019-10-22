@@ -19,9 +19,12 @@ func Index(s string, toFind string) int {
 				if arr2[j] == arr[i+j] {
 					continue
 				}
-				continue
+				a := 1
+				break
 			}
-			return i
+			if a == 1 {
+				return i
+			}
 		}
 	}
 	return -1
