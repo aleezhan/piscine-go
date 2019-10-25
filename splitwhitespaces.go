@@ -2,9 +2,13 @@ package piscine
 
 func SplitWhiteSpaces(str string) []string {
 	ind := 1
+	c := 0
 	for _, word := range str {
-		if word == ' ' || word == '\n' || word == '\t' {
+		if word == ' ' || word == '\n' || word == '\t' && c == 0 {
 			ind++
+			c++
+		} else if word != ' ' && word != ' ' && word != '\t' {
+			c = 0
 		}
 	}
 	strr := make([]string, ind)
