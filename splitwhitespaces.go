@@ -1,7 +1,7 @@
 package piscine
 
 import (
-	piscine "printwordstables.go"
+	piscine ".."
 )
 
 func SplitWhiteSpaces(str string) []string {
