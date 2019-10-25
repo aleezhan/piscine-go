@@ -17,8 +17,8 @@ func SplitWhiteSpaces(str string) []string {
 			continue
 		} else if words != ' ' && words != '\n' && words != '\t' {
 			strr[in] += string(words)
+			b = 0
 		}
-		b = 0
 	}
 	return strr
 
