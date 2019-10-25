@@ -14,11 +14,10 @@ func SplitWhiteSpaces(str string) []string {
 	strr := make([]string, ind)
 	in := 0
 	b := 0
-	for _, words := range str {
-		if (words == ' ' || words == '\n' || words == '\t') && b == 0 {
+	for index, words := range str {
+		if (words == ' ' || words == '\n' || words == '\t') && b == 0 && index != 0 {
 			in++
 			b++
-			continue
 		} else if words != ' ' && words != '\n' && words != '\t' {
 			strr[in] += string(words)
 			b = 0
