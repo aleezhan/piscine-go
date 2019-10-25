@@ -1,9 +1,5 @@
 package piscine
 
-import (
-	piscine ".."
-)
-
 func SplitWhiteSpaces(str string) []string {
 	ind := 1
 	c := 0
