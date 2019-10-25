@@ -23,6 +23,6 @@ func SplitWhiteSpaces(str string) []string {
 			b = 0
 		}
 	}
-	PrintWordsTbales(strr)
+	return strr
 
 }
