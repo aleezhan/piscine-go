@@ -3,8 +3,12 @@ package piscine
 import "github.com/01-edu/z01"
 
 func PrintWordsTables(table []string) {
-
-	for i := 0; i < len(table); i++ {
+	l := 0
+	for _, words := range table {
+		words = words
+		l++
+	}
+	for i := 0; i < l; i++ {
 		for _, word := range table[i] {
 			z01.PrintRune(word)
 		}
