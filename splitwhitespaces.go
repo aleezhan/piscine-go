@@ -7,7 +7,8 @@ func SplitWhiteSpaces(str string) []string {
 			ind++
 		}
 	}
-	var strr [ind]string
+	const indd int = ind
+	var strr [indd]string
 	in := 0
 	for _, words := range str {
 		if words == ' ' {
