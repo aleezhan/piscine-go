@@ -8,7 +8,7 @@ func SplitWhiteSpaces(str string) []string {
 			in++
 			continue
 		}
-		strr[in] += words
+		strr[in] += string(words)
 	}
 	return strr
 
