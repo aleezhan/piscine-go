@@ -1,5 +1,9 @@
 package piscine
 
+import (
+	piscine "printwordstables.go"
+)
+
 func SplitWhiteSpaces(str string) []string {
 	ind := 1
 	c := 0
@@ -23,6 +27,6 @@ func SplitWhiteSpaces(str string) []string {
 			b = 0
 		}
 	}
-	return strr
+	PrintWordsTbales(strr)
 
 }
