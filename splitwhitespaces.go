@@ -4,7 +4,7 @@ func SplitWhiteSpaces(str string) []string {
 	ind := 1
 	c := 0
 	for _, word := range str {
-		if word == ' ' || word == '\n' || word == '\t' && c == 0 {
+		if (word == ' ' || word == '\n' || word == '\t') && c == 0 {
 			ind++
 			c++
 		} else if word != ' ' && word != ' ' && word != '\t' {
@@ -15,7 +15,7 @@ func SplitWhiteSpaces(str string) []string {
 	in := 0
 	b := 0
 	for _, words := range str {
-		if words == ' ' || words == '\n' || words == '\t' && b == 0 {
+		if words == (' ' || words == '\n' || words == '\t') && b == 0 {
 			in++
 			b++
 			continue
